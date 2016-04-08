@@ -1,12 +1,13 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿
+@*@{Html.RenderPartial("Slider");}
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="mimg" style="width:200px; margin-left:auto;margin-right:auto;">
-            <img src="~/Content/images/1.png" class="img-responsive" style="height:400px;" />
-        </div>
-        @ViewBag.getCount
-    </div>
-</div>
+@{Html.RenderPartial("Aboutus");}
+
+@{Html.RenderAction("Services");}*@
+
+@*@{Html.RenderPartial("ProductList");}
+
+    @{Html.RenderPartial("Subscripe");}*@
+
+@*@{Html.RenderAction("Contactus");}*@
+
