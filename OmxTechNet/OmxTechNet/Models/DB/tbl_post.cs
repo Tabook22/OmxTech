@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace OmxTechNet.Models.DB
 {
@@ -17,9 +18,12 @@ namespace OmxTechNet.Models.DB
         public string month { get; set; }
 
         [Display(Name = "Contents")]
+        [UIHint("tinymce_Jquery_Full"), AllowHtml]
         public string post_content { get; set; }
 
+       
         [Display(Name = "Article Summary")]
+        [UIHint("tinymce_Jquery_Full"),AllowHtml]
         public string post_excerpt { get; set; }
         public string post_catid { get; set; }
         public Nullable<System.DateTime> post_modified { get; set; }
