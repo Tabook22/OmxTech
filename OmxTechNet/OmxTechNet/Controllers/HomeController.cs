@@ -16,8 +16,6 @@ namespace OmxTechNet.Controllers
         private OmxtechDbContext db = new OmxtechDbContext();
         public ActionResult Index()
         {
-            ArticleViewData ARD = new ArticleViewData();
-
             var tba = db.tbl_articles.Select(x => new ArticleViewData {
             a_date = x.a_date,
             a_title=x.a_title,
@@ -32,23 +30,39 @@ namespace OmxTechNet.Controllers
             a_loc =x.a_loc,
             a_status=x.a_status
             }).Where(x=>x.a_loc=="3" && x.a_status=="1").ToList();
+
             
+
             //var tba = db.tbl_articles.OrderBy(x => x.a_loc).Where(x => x.a_loc == "3" && x.a_status == "1");
             //var getImgGallery = db.tbl_articles.OrderBy(x => x.a_loc).Where(x => x.a_loc == "3" && x.a_status == "1").ToList().FirstOrDefault();
             var getheaderbg = db.tbl_articles.Where(x => x.a_loc == "1" && x.a_status == "1").FirstOrDefault();
             var getsitelogo = db.tbl_articles.Where(x => x.a_loc == "2" && x.a_status == "1").FirstOrDefault();
-   ViewBag.sitelogo = getsitelogo.a_img ; //site logo
 
+            ViewBag.About = getheaderbg.a_img; //header background
             ViewBag.bg = getheaderbg.a_img; //header background
          
             return View(tba);
 
         }
 
+        public ActionResult Aboutus()
+        {
+            //about the site or introduction the site
+
+            var abt = db.tbl_articles.Select(x => new AboutusViewModel
+            {
+                a_title = x.a_title,
+                a_desc = x.a_desc,
+                a_link = x.a_link,
+                a_img = x.a_img,
+                a_order = x.a_order,
+
+            }).Where(x => x.a_loc == "4" && x.a_status == "1").ToList();
+            return PartialView("Aboutus");
+        }
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+          
             return View();
         }
 
