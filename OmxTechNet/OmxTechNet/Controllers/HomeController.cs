@@ -56,9 +56,11 @@ namespace OmxTechNet.Controllers
                 a_link = x.a_link,
                 a_img = x.a_img,
                 a_order = x.a_order,
+                a_loc = x.a_loc,
+                a_status = x.a_status
 
             }).Where(x => x.a_loc == "4" && x.a_status == "1").ToList();
-            return PartialView("Aboutus");
+            return PartialView("Aboutus", abt);
         }
         public ActionResult About()
         {
