@@ -40,7 +40,9 @@ namespace OmxTechNet.Controllers
 
             ViewBag.About = getheaderbg.a_img; //header background
             ViewBag.bg = getheaderbg.a_img; //header background
-         
+            ViewBag.SiteLog = getsitelogo.a_img; //site logo
+
+
             return View(tba);
 
         }
