@@ -1,5 +1,7 @@
 ﻿using OmxTechNet.Models;
 using OmxTechNet.Models.DB;
+using OmxTechNet.Models.ViewModel;
+using OmxTechNet.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -14,17 +16,33 @@ namespace OmxTechNet.Controllers
         private OmxtechDbContext db = new OmxtechDbContext();
         public ActionResult Index()
         {
-            var getImgGallery = db.tbl_articles.Where(x => x.a_loc == "3" && x.a_status == "1").ToList();
-            if (getImgGallery.Count()>0)
-            {
-                var getheaderbg = db.tbl_articles.Where(x => x.a_loc == "1" && x.a_status == "1").First().a_img;
-                var getsitelogo = db.tbl_articles.Where(x => x.a_loc == "2" && x.a_status == "1").First().a_img;
-                ViewBag.bg = getheaderbg; //header background
-                ViewBag.sitelogo = getsitelogo; //site logo
-                return View(getImgGallery);
-            }
+            ArticleViewData ARD = new ArticleViewData();
 
-            return View();
+            var tba = db.tbl_articles.Select(x => new ArticleViewData {
+            a_date = x.a_date,
+            a_title=x.a_title,
+            a_source =x.a_source,
+            a_desc=x.a_desc,
+            a_link=x.a_link,
+            a_img =x.a_img,
+            a_type =x.a_type,
+            a_mediatype =x.a_mediatype,
+            a_meidatype_link=x.a_meidatype_link,
+            a_order=x.a_order,
+            a_loc =x.a_loc,
+            a_status=x.a_status
+            }).Where(x=>x.a_loc=="3" && x.a_status=="1").ToList();
+            
+            //var tba = db.tbl_articles.OrderBy(x => x.a_loc).Where(x => x.a_loc == "3" && x.a_status == "1");
+            //var getImgGallery = db.tbl_articles.OrderBy(x => x.a_loc).Where(x => x.a_loc == "3" && x.a_status == "1").ToList().FirstOrDefault();
+            var getheaderbg = db.tbl_articles.Where(x => x.a_loc == "1" && x.a_status == "1").FirstOrDefault();
+            var getsitelogo = db.tbl_articles.Where(x => x.a_loc == "2" && x.a_status == "1").FirstOrDefault();
+   ViewBag.sitelogo = getsitelogo.a_img ; //site logo
+
+            ViewBag.bg = getheaderbg.a_img; //header background
+         
+            return View(tba);
+
         }
 
         public ActionResult About()

@@ -32,4 +32,6 @@ namespace OmxTechNet.Models.ViewModels
         [Display(Name = "الحالة")]
         public string a_status { get; set; }
     }
+
+    
 }

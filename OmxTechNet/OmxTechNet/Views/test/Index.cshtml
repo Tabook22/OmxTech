@@ -1,0 +1,14 @@
+﻿@model IEnumerable<OmxTechNet.Models.DB.tbl_article>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+    @foreach (var itm in Model)
+    {
+<li><img src="@Url.Content(@itm.a_img)" style="width:200px;" /></li>
+    }
+
+</ul>

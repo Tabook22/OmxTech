@@ -179,6 +179,7 @@
     <Compile Include="Controllers\SectionsController.cs" />
     <Compile Include="Controllers\SiteSettingsController.cs" />
     <Compile Include="Controllers\SocialsController.cs" />
+    <Compile Include="Controllers\testController.cs" />
     <Compile Include="Controllers\UserAccountController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -204,6 +205,7 @@
     <Compile Include="Models\ViewModel\AccountRoleViewModel.cs" />
     <Compile Include="Models\ViewModel\AccountViewModel.cs" />
     <Compile Include="Models\ViewModel\Articles.cs" />
+    <Compile Include="Models\ViewModel\ArticleViewData.cs" />
     <Compile Include="Models\ViewModel\ContactViewModel.cs" />
     <Compile Include="Models\ViewModel\ImageViewModel.cs" />
     <Compile Include="Models\ViewModel\PostDataModel.cs" />
@@ -724,6 +726,7 @@
     <Content Include="Views\Articles\Edit.cshtml" />
     <Content Include="Views\Articles\editart.cshtml" />
     <Content Include="Views\Articles\Index.cshtml" />
+    <Content Include="Views\test\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
