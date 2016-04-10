@@ -210,6 +210,7 @@
     <Compile Include="Models\ViewModel\ContactViewModel.cs" />
     <Compile Include="Models\ViewModel\ImageViewModel.cs" />
     <Compile Include="Models\ViewModel\PostDataModel.cs" />
+    <Compile Include="Models\ViewModel\ProductViewModel.cs" />
     <Compile Include="Models\ViewModel\SectionsViewModel.cs" />
     <Compile Include="Models\ViewModel\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

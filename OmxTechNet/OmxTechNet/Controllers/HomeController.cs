@@ -133,8 +133,19 @@ namespace OmxTechNet.Controllers
 
         public ActionResult Services()
         {
-            var getImgGallery = db.tbl_articles.Where(x => x.a_loc == "3" && x.a_status == "1").ToList();
-            return View(getImgGallery);
+            var pvm = db.tbl_articles.Select(x => new ProductViewModel
+            {
+                a_title = x.a_title,
+                a_desc = x.a_desc,
+                a_link = x.a_link,
+                a_img = x.a_img,
+                a_order = x.a_order,
+                a_loc = x.a_loc,
+                a_status = x.a_status
+
+            }).Where(x => x.a_loc == "5" && x.a_status == "1").ToList();
+            //var getProducts = db.tbl_articles.Where(x => x.a_loc == "5" && x.a_status == "1").ToList();
+            return View(pvm);
         }
 
         //public ActionResult ProductList()

@@ -1,17 +1,14 @@
-﻿@model IEnumerable<OmxTechNet.Models.DB.tbl_article>
+﻿@model IEnumerable<OmxTechNet.Models.ViewModel.ProductViewModel>
 @{
     ViewBag.Title = "Index";
     Layout = "";
 }
 
-@*<style>
-    #blog {
-    background: rgba(0, 0, 0, 0) url("../images/blog/blog-img-1") no-repeat fixed 0 0 / cover ;
-    padding-bottom: 100px;
-    padding-top: 75px;
-    position: relative;
+<style>
+#blog .block ul li .blog-img{
+    background-color:#eee;
 }
-</style>*@
+</style>
 <!--
    blog start
    ============================ -->
@@ -20,15 +17,15 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                      <h1 class="heading">Our <span>Services</span> And <span>Activities</span></h1>
+                      <h1 class="heading">Our <span>Products</span> And <span>Services</span></h1>
                     <ul class="service-list">
 
                     @foreach (var itm in Model)
                     {
 
                         <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
-                            <div class="blog-img">
-                                <img src="@itm.a_img" alt="blog-img" style="width:293px;height:220px;">
+                            <div class="blog-img" style="width:285px;height:220px;">
+                                <img src="@itm.a_img" alt="blog-img" class="img-responsive">
                             </div>
                             <div class="content-right">
                                 <h3 style="height:30px;overflow:hidden;"><a href="@Url.Content(@itm.a_link)">@itm.a_title</a></h3>
