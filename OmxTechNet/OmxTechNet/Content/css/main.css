@@ -75,7 +75,7 @@ a:active {
 }
 .heading span {
   font-size: 45px;
-  color: #ff530a;
+  color:#C12F81;
   font-weight: 600;
 }
 .heading:before {
@@ -97,7 +97,7 @@ a:active {
   padding: 30px 0px;
 }
 .title span {
-  color: #FF5333;
+  color: #C12F81;
 }
 .before-border {
   content: "";
@@ -182,7 +182,7 @@ nav .block .navbar-default .navbar-nav > li > a:before {
   width: 0;
 }
 nav .block .navbar-default .navbar-nav > li > a:hover:before {
-  background-color: #e94c3d;
+  background-color:#C12F81;
   content: "";
   width: 100%;
 }
@@ -203,7 +203,7 @@ nav .block .navbar-default .navbar-nav > li.current > a:before {
   -o-transition: .3s all;
   transition: .3s all;
   width: 100%;
-  background-color: #e94c3d;
+  background-color: #C12F81;
 }
 nav .block .navbar-default .navbar-nav > .active > a,
 nav .block .navbar-default .navbar-nav > .active > a:focus,
@@ -218,7 +218,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   bottom: 0px;
   width: 100%;
   height: 2px;
-  background: #FF5333;
+  background: #C12F81;
 }
 /*--
     slider Start
@@ -243,7 +243,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   padding-bottom: 50px;
 }
 #slider .block .owl-carousel .owl-pagination .active {
-  background: #FF5333;
+  background: #C12F81;
 }
 #slider .block .owl-carousel .owl-pagination div {
   background: #DADADA;
@@ -412,7 +412,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   float: right;
   padding: 28px 102.5px;
   border-radius: 0px;
-  background: #ff530a;
+  background: #C12F81;
   color: #fff;
   border: 1px solid transparent ;
   text-transform: uppercase;
@@ -424,8 +424,8 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 #blog .block .btn-more-info:hover {
   background: transparent;
-  color: #ff530a;
-  border: 1px solid #ff530a;
+  color: #C12F81;
+  border: 1px solid#C12F81;
 }
 /*--
     price Start
@@ -479,8 +479,8 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   padding: 28px 105px;
   border-radius: 0px;
   background: none;
-  color: #FF4F02;
-  border: 1px solid #FF4F02;
+  color: #C12F81;
+  border: 1px solid #C12F81;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
@@ -489,7 +489,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   transition: .3s all;
 }
 #price .block .pricing-list .btn:hover {
-  background: #ff530a;
+  background:#C12F81;
   color: #fff;
 }
 /*--
@@ -591,7 +591,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   border: 1px solid #7EC3BB;
 }
 #contact-us .block a {
-  background: #FF4F02;
+  background: #C12F81;
   float: right;
   color: #fff;
   font-weight: 600;
@@ -616,7 +616,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   padding-bottom: 25px;
 }
 #footer .block h3 span {
-  color: #FF4F02;
+  color: #C12F81;
 }
 #footer .block .blog ul,
 #footer .block .info ul,
@@ -635,7 +635,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #footer .block .gallary ul li h4 {
   padding-bottom: 10px;
   display: block;
-  color: #FF4F02;
+  color: #C12F81;
 }
 #footer .block .blog ul li h4 i,
 #footer .block .info ul li h4 i,
@@ -647,7 +647,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #footer .block .blog ul li h4 a,
 #footer .block .info ul li h4 a,
 #footer .block .gallary ul li h4 a {
-  color: #FF4F02;
+  color: #C12F81;
   font-size: 20px;
   font-weight: 600;
 }
@@ -663,7 +663,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   padding-top: 30px;
 }
 #footer .block .social-media-link h3 span {
-  color: #FF4F02;
+  color: #C12F81;
 }
 #footer .block .social-media-link ul li {
   display: inline-block;
@@ -684,7 +684,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   transition: .3s all;
 }
 #footer .block .social-media-link ul li a:hover {
-  background: #FF4F02;
+  background: #C12F81;
   color: #fff;
 }
 /*--
@@ -703,5 +703,5 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   letter-spacing: 2px;
 }
 #footer-bottom p a {
-  color: #FF4F02;
+  color: #C12F81;
 }

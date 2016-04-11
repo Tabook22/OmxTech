@@ -28,8 +28,10 @@
                                 <img src="@itm.a_img" alt="blog-img" class="img-responsive">
                             </div>
                             <div class="content-right">
-                                <h3 style="height:30px;overflow:hidden;"><a href="@Url.Content(@itm.a_link)">@itm.a_title</a></h3>
+                                <h3 style="height:30px;overflow:hidden;"><a href="@Url.Content(@itm.a_link)" style="color:#EF038E!important;">@itm.a_title</a></h3>
                                 <p style="height:100px;overflow:hidden;">@itm.a_desc</p>
+                                <i class="fa fa-arrow-circle-left" style="color:#EF038E;padding:1rem;"><a href="#" style="color:#EF038E;padding:1rem;font-size:1rem;">Read More</a></i>
+
                             </div>
                         </li>
                     }
@@ -40,7 +42,7 @@
     </div><!-- .containe close -->
 </section><!-- #blog close -->
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript">
+    @*<script type="text/javascript">
         $(document).ready(function () {
 
             $('ul.service-list li:eq(2),ul.service-list li:eq(3)').html(
@@ -53,4 +55,4 @@
                                 "</div>"
                 );
             });
-    </script>
+    </script>*@

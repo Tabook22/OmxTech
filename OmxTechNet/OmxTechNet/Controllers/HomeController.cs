@@ -133,7 +133,7 @@ namespace OmxTechNet.Controllers
 
         public ActionResult Services()
         {
-            var pvm = db.tbl_articles.Select(x => new ProductViewModel
+            var pvm = db.tbl_articles.Where(x => x.a_loc == "5" && x.a_status == "1").Select(x => new ProductViewModel
             {
                 a_title = x.a_title,
                 a_desc = x.a_desc,
@@ -142,8 +142,7 @@ namespace OmxTechNet.Controllers
                 a_order = x.a_order,
                 a_loc = x.a_loc,
                 a_status = x.a_status
-
-            }).Where(x => x.a_loc == "5" && x.a_status == "1").ToList();
+            }).ToList();
             //var getProducts = db.tbl_articles.Where(x => x.a_loc == "5" && x.a_status == "1").ToList();
             return View(pvm);
         }
