@@ -4,55 +4,26 @@
     Layout = "";
 }
 
-<style>
-#blog .block ul li .blog-img{
-    background-color:#eee;
-}
-</style>
 <!--
    blog start
    ============================ -->
 <section id="blog">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="block">
-                      <h1 class="heading">Our <span>Products</span> And <span>Services</span></h1>
-                    <ul class="service-list">
-
-                    @foreach (var itm in Model)
-                    {
-
-                        <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
-                            <div class="blog-img" style="width:285px;height:220px;">
-                                <img src="@itm.a_img" alt="blog-img" class="img-responsive">
-                            </div>
-                            <div class="content-right">
-                                <h3 style="height:30px;overflow:hidden;"><a href="@Url.Content(@itm.a_link)" style="color:#EF038E!important;">@itm.a_title</a></h3>
-                                <p style="height:100px;overflow:hidden;">@itm.a_desc</p>
-                                <i class="fa fa-arrow-circle-left" style="color:#EF038E;padding:1rem;"><a href="#" style="color:#EF038E;padding:1rem;font-size:1rem;">Read More</a></i>
-
-                            </div>
-                        </li>
-                    }
-                  </ul>
-                </div>
-            </div><!-- .col-md-12 close -->
-        </div><!-- .row close -->
+        @foreach (var itm in Model)
+        {
+            <div class="col-sm-2 col-md-2" style="height:200px;">
+                <img src="@Url.Content(@itm.a_img)"
+                     alt="" class="img-rounded img-responsive" />
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <blockquote>
+                    <p style="font-weight:bold;color:#C30E7E">@itm.a_title</p>
+                </blockquote>
+                <p style="height:200px; overflow:hidden;">
+                    @itm.a_desc
+                </p>
+            </div>
+        }
+        
     </div><!-- .containe close -->
 </section><!-- #blog close -->
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    @*<script type="text/javascript">
-        $(document).ready(function () {
-
-            $('ul.service-list li:eq(2),ul.service-list li:eq(3)').html(
-                                "<div class="+"content-left"+">"+
-                                   "<h3 style=" + "height:30px;overflow:hidden;" + ">"+"<a href="+ $("a",this).attr("href") +">"+ $("h3", this).text() +"</a>"+ "</h3>" +
-                                  "<p style="+"height:100px;overflow:hidden;"+">" +  $("p",this).text()+ "</>"+"</p>"+
-                                "</div>"+
-                                "<div class="+"blog-img-2"+">"+
-                                    "<img src="+$("img",this).attr('src')+" alt="+"blog-img"+" style="+"width:293px;height:220px;"+"/>" +
-                                "</div>"
-                );
-            });
-    </script>*@

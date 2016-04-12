@@ -163,5 +163,12 @@ namespace OmxTechNet.Controllers
         //{
         //    return View();
         //}
+
+
+        //download pdf
+        public ActionResult DownloadPDF()
+        {
+            return File("~/Content/OMXProducts.pdf", "application/pdf", "OMXProducts.pdf");
+        }
     }
 }

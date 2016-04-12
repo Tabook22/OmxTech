@@ -314,6 +314,8 @@
     <Content Include="Content\images\lightbox-btn-next.gif" />
     <Content Include="Content\images\lightbox-btn-prev.gif" />
     <Content Include="Content\images\lightbox-ico-loading.gif" />
+    <Content Include="Content\images\products\eseries.jpg" />
+    <Content Include="Content\images\products\eseries2.jpg" />
     <Content Include="Content\images\products\fullD.jpg" />
     <Content Include="Content\images\products\p1.png" />
     <Content Include="Content\images\products\p10.jpg" />
@@ -373,6 +375,7 @@
     <Content Include="Content\js\jquery.sticky.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\min\main.min.js" />
+    <Content Include="Content\js\modernizr.custom.34978.js" />
     <Content Include="Content\js\plugins.js" />
     <Content Include="Content\js\vendor\jquery-1.10.2.min.js" />
     <Content Include="Content\js\vendor\modernizr-2.6.2.min.js" />
@@ -433,6 +436,7 @@
     <Content Include="Content\js\.DS_Store" />
     <Content Include="Content\less\main.less" />
     <Content Include="Content\less\responsive.less" />
+    <Content Include="Content\OMXProducts.pdf" />
     <None Include="Properties\PublishProfiles\OMXTECH.NET - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\dropzone.js" />
@@ -756,6 +760,8 @@
     <Content Include="Views\Articles\editart.cshtml" />
     <Content Include="Views\Articles\Index.cshtml" />
     <Content Include="Views\test\Index.cshtml" />
+    <Content Include="Views\Shared\OmxEseries.cshtml" />
+    <Content Include="Views\Shared\OmxSseries.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
