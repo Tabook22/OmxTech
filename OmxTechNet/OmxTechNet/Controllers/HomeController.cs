@@ -16,7 +16,7 @@ namespace OmxTechNet.Controllers
         private OmxtechDbContext db = new OmxtechDbContext();
         public ActionResult Index()
         {
-            var tba = db.tbl_articles.Select(x => new ArticleViewData {
+            var tba = db.tbl_articles.OrderBy(x=>x.a_order).Select(x => new ArticleViewData {
             a_date = x.a_date,
             a_title=x.a_title,
             a_source =x.a_source,

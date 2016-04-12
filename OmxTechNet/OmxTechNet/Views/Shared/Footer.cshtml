@@ -1,6 +1,47 @@
 ﻿<!--
   footer  start
   ============================= -->
+<link href="~/Content/css/jquery.lightbox-0.5.css" rel="stylesheet" />
+<script src="~/Content/js/jquery.lightbox-0.5.js"></script>
+<!-- Ativando o jQuery lightBox plugin -->
+<script type="text/javascript">
+    $(function() {
+        $('#gallery a').lightBox();
+    });
+</script>
+<style type="text/css">
+/* jQuery lightBox plugin - Gallery style */
+    #gallery {
+        background-color:#fff;
+        padding: 10px;
+        width: 520px;
+    }
+
+        #gallery ul {
+            list-style: none;
+        }
+
+            #gallery ul li {
+                display: inline;
+            }
+
+            #gallery ul img {
+                border: 1px solid #C12F81;
+                border-width: 1px 1px 1px;
+                margin-bottom:5px;
+            }
+
+            #gallery ul a:hover img {
+                border: 5px solid #fff;
+                border-width: 5px 5px 20px;
+                color: #fff;
+            }
+
+            #gallery ul a:hover {
+                color: #fff;
+            }
+</style>
+
 <section id="footer">
     <div class="container">
         <div class="row">
@@ -14,8 +55,7 @@
                                 <p>Tel: +971-50-7779644 <br/>
 +971-50-7779655<br/>
 +971-50-7779688  </p>
-                                <h4 style="padding-top:10px;"><i class="fa fa-fax"></i>Fax</h4>
-                                <p>(00) 968 0000000</p>
+                               
 
                             </li>
                             <li>
@@ -37,9 +77,63 @@ E-mail: sales@omxtech.net </p>
                 </div>
             </div>
             <!-- .col-md-4 close -->
-            <div class="col-md-4">
+            <div class="col-md-8">
                 <div class="block wow fadeInLeft" data-wow-delay="700ms">
-                    <h3>LATEST <span>COMPANY NEWS</span></h3>
+                    <div id="gallery">
+                        <ul>
+                            <li>
+                                <a href="~/Content/images/products/p1.png" title="OMX AP-120E InWall Access Point ">
+                                    <img src="~/Content/images/products/p1.png" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Content/images/products/p2.png" title="OMX AP-130E InWall Access Point ">
+                                    <img src="~/Content/images/products/p2.png" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Content/images/products/p3.png" title="OMX SMB Wireless Access Point">
+                                    <img src="~/Content/images/products/p3.png" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Content/images/products/p4.png" title="OMX AP-3200S Ceiling Enterprise Wireless Access Point">
+                                    <img src="~/Content/images/products/p4.png" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Content/images/products/p5.png" title="OMX AP-300S InWall Access Point ">
+                                    <img src="~/Content/images/products/p5.png" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Content/images/products/p6.png" title="">
+                                    <img src="~/Content/images/products/p6.png" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Content/images/products/p7.png" title="">
+                                    <img src="~/Content/images/products/p7.png" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Content/images/products/p16.png" title="">
+                                    <img src="~/Content/images/products/p16.jpg" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Content/images/products/p17.png" title="">
+                                    <img src="~/Content/images/products/p17.jpg" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Content/images/products/p18.png" title="">
+                                    <img src="~/Content/images/products/p18.jpg" width="72" height="72" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    @*<h3>LATEST <span>COMPANY NEWS</span></h3>
                     <div class="blog">
                         <ul>
                             <li>
@@ -51,11 +145,11 @@ E-mail: sales@omxtech.net </p>
                                 <p>Visit to Salalah Port and conducting a series of mettings</p>
                             </li>
                         </ul>
-                    </div>
+                    </div>*@
                 </div>
             </div>
             <!-- .col-md-4 close -->
-            <div class="col-md-4">
+            @*<div class="col-md-4">
                 <div class="block wow fadeInLeft" data-wow-delay="1100ms">
                     <div class="gallary">
                         <h3>PHOTO <span>STREAM</span></h3>
@@ -91,7 +185,7 @@ E-mail: sales@omxtech.net </p>
     </ul>
                     </div>
                 </div>
-            </div>
+            </div>*@
             <!-- .col-md-4 close -->
         </div><!-- .row close -->
     </div><!-- .containe close -->
@@ -110,3 +204,6 @@ footer-bottom  start
         </div>
     </div>
 </footer>
+
+
+    
