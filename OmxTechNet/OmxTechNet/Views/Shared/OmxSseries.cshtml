@@ -18,30 +18,31 @@
 <!--
     about-us start
     ============================== -->
-<section id="about-us" style="background-color:#eee;">
+<section id="omxproducts2" style="background-color:#eee;padding-top:20px;">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="omxeseries">
-                    <h3>OMX OMW-S Series</h3>
-                    <p>Wireless Access Controller with Cloud Management, Web Portal Authentication, Advertisement and End User Information</p>
-                    @*<ul>
-                        <li>
-                            Full coverage based on 16.77 million signal paths
-                            With  24 built-in array antennas that dynamically selects up to 16.77 million different antenna combinations and effectively solves the weakness of coverage dead zones of traditional antennas.
-                        </li>
-                        <li>
-                            Automatic adjustment for best signals
-                            Even if the smart device is moving fast, the X-Sense Smart Antenna can always trace the smart device and offer the best signal strength.
-                        </li>
-                        <li>Signal strength multiplied by 3 times with the same power supply</li>
-                        <li>Interference reduction by 30% for easier deployment</li>
-                        <li>High-Speed Wireless Performance with Sustainability</li>
-                        <li>High performance for wireless service requirements</li>
-                        <li>Go green, save energy and protect environment</li>
+                    <h2 style="color:#c12f81;">
+                        OMX OMW-S Series</h2>
+                        <p>Wireless Access Controller with Cloud Management, Web Portal Authentication, Advertisement and End User Information</p>
+                        @*<ul>
+                <li>
+                    Full coverage based on 16.77 million signal paths
+                    With  24 built-in array antennas that dynamically selects up to 16.77 million different antenna combinations and effectively solves the weakness of coverage dead zones of traditional antennas.
+                </li>
+                <li>
+                    Automatic adjustment for best signals
+                    Even if the smart device is moving fast, the X-Sense Smart Antenna can always trace the smart device and offer the best signal strength.
+                </li>
+                <li>Signal strength multiplied by 3 times with the same power supply</li>
+                <li>Interference reduction by 30% for easier deployment</li>
+                <li>High-Speed Wireless Performance with Sustainability</li>
+                <li>High performance for wireless service requirements</li>
+                <li>Go green, save energy and protect environment</li>
 
-                    </ul>*@
-                </div>
+            </ul>*@
+</div>
                 <div class="block">
                     @*@foreach (var itm in Model)
                         {
@@ -56,12 +57,64 @@
 
                 </div>
             </div><!-- .col-md-12 close -->
-            <div class="col-md-8">
+            <div class="col-md-8" style="height:100px;">
 
-                <img src="~/Content/images/products/eseries.jpg" /> <br />
-                <img src="~/Content/images/products/eseries2.jpg" />
+                @*<img src="~/Content/images/products/eseries.jpg" /> <br />
+                <img src="~/Content/images/products/eseries2.jpg" />*@
             </div>
+            <div id="prolst" class="row" style="padding-top:20px;">
 
+                <div class="col-md-4 block">
+                    <img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="~/Content/images/products/p8.png" alt="omxtech" style="width:20rem;">
+                    <h3 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+                        <span style="color:#EF038E;">OMX SMB Wireless Access Point</span>
+                    </h3>
+                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
+                        •	Centrally Control & Manage from 200 to 300 Access Points <br/>
+                        •	5 Gigabit Ports<br />
+                        •	Quality of Service Supports<br />
+                        •	Works as Gateway<br />
+                        •	Local Web Portal Authentication<br />
+                        •	Supports Cloud Management System<br />
+
+                    </p>
+
+                </div>
+                <div class="col-md-4 block">
+                    <img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="~/Content/images/products/p13.png" alt="omxtech" style="width:20rem;">
+                    <h3 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+                        <span style="color:#EF038E;">OMX AP-3200S Ceiling Enterprise Wireless Access Point</span>
+                    </h3>
+                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
+                        •	900 Mbps 802.11ac Speed  5 GHz <br/>
+                        •	300 Mbps 802.11n Speed 2.4 GHz<br />
+                        •	Dual band, Dual Radio 2x2 High Power MIMO Antenna<br />
+                        •	Gigabit Ethernet<br />
+                        •	Connects up to 100 devices<br />
+                        •	Up to 8 SSIDs<br />
+                        •	PoE Support<br />
+
+
+
+                    </p>
+
+                </div>
+                <div class="col-md-4 block">
+                    <img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="~/Content/images/products/p5.png" alt="omxtech" style="width:20rem;">
+                    <h3 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+                        <span style="color:#EF038E;">OMX AP-300S InWall Access Point </span>
+                    </h3>
+                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
+                        •	300 Mbps 802.11n 2.4 GHz <br/>
+                        •	100 Mbps Ethernet<br />
+                        •	Up to 4 SSIDs<br />
+                        •	PoE Support<br />
+                        •	Different models with/without USB Charger<br />
+                    </p>
+
+                </div>
+              
+            </div>
         </div> <div style="border-top:1px solid #fff;padding:5px;text-align:right;">
             @*<span style="color:#fff;">Download (PDF) </span>@Html.ActionLink("Products Specifications", "DownloadPDF", "Home")*@
         </div><!-- .row close -->
